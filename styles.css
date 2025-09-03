@@ -1,0 +1,58 @@
+.logo {
+    width: 50px;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff8e1; /* cor de fundo clara */
+    padding: 10px 30px;
+    border-bottom: 3px solid #ff8a80; /* linha inferior */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Logo */
+  header .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Menu de navegação */
+  header .Header {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header .Header li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  
+  
+  /* Botão de login */
+  .auth-button .btn-login {
+    background: #ff5252;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .auth-button .btn-login:hover {
+    background: #e53935;
+  }
+  
