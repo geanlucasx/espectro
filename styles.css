@@ -1,9 +1,5 @@
-.logo {
-    width: 50px;
-}
-
 /* Reset básico */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -54,7 +50,8 @@
   
   .auth-button .btn-login:hover {
     background: #e53935;
-  }                                                                                   footer {
+  }                                                                                  
+   footer {
   width: 100%;
   background-color:#f9f9e6;
   position: min-height;
@@ -116,3 +113,77 @@
 body {
   padding-bottom: 80px;
 }
+
+/*configuraçao pagina inicial */
+
+:root{
+    --bg: #0097B2;         
+    --panel: #0097B2;      
+    --card: #ffffff;       
+    --muted: rgba(0,0,0,0.7);
+    font-family: Arial, sans-serif;
+  }
+  
+  *{box-sizing:border-box;margin:0;padding:0}
+  
+  body{
+    background: linear-gradient(180deg, var(--bg) 0%, #0097B2 100%);
+    min-height:100vh;
+    color: #062b33;
+    padding:20px;
+  }
+  
+  .page{
+    max-width:980px;
+    margin:0 auto;
+  }
+  
+  .intro-cards{
+    display:flex;
+    gap:18px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+  }
+  
+  .card{
+    background: var(--card);
+    padding:20px;
+    border-radius:6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    flex:1 1 320px;
+  }
+  .card h2{
+    font-size:16px;
+    margin-bottom:8px;
+    color:#0a454c;
+  }
+  .card p{
+    font-size:13px;
+    line-height:1.45;
+    color:var(--muted);
+  }
+  
+  .hereditario{
+    margin-top:20px;
+    background: var(--panel);
+    padding:22px;
+    border-radius:6px;
+  }
+  
+  .hereditario-titulo{
+    text-align:center;
+    color: #fff;
+    margin-bottom:18px;
+    font-weight:600;
+    font-size:18px;
+  }
+  
+  .hereditario-imagem{
+    display:flex;
+    justify-content:center;
+  }
+  .hereditario-imagem img{
+    max-width:100%;
+    border-radius:6px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  }
