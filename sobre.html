@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Daltonismo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo Espectro">
+    </div>
+
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="acessibilidade.html">Acessibilidade</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="teceapoio.html">Tecnologia e Apoio</a></li>
+            <li><a href="https://forms.gle/TgkdLQos3wDZQgFm6">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="bolas-primarias">
+        <span class="vermelho"></span>
+        <span class="azul"></span>
+        <span class="amarelo"></span>
+    </div>
+</header>
+
+
+
+
+    <main class="page">
+        <section class="intro-cards">
+            <article class="card">
+                <h2>O que é</h2>
+                <p>
+                    O daltonismo, também conhecido como discromatopsia, é um distúrbio visual que se caracteriza pela incapacidade de perceber e distinguir as cores, especialmente as cores primárias como vermelho, verde e azul. <br>
+                    Essa condição pode ser hereditária ou adquirida e ocorre devido a anomalias nas células sensíveis à cor na retina, conhecidas como cones.<br>
+                    Em casos mais raros, pode haver uma total ausência de percepção de cores, resultando em visão acromática, onde a pessoa vê apenas tons de branco, cinza e preto.
+                </p>
+            </article>
+
+
+            <article class="card">
+                <h2>Experiências</h2>
+                <p>
+                    ❌​Discriminação e estigmatização: Pessoas com daltonismo podem ser percebidas como menos capazes e enfrentar dificuldades em carreiras que exigem percepção de cores. <br>
+                    📚​ Desafios educacionais: No ambiente escolar, eles podem ter dificuldades em ler mapas, gráficos e diagramas, o que pode impactar sua autoestima e desempenho acadêmico. <br>
+                    👤​ Isolamento social: O daltonismo pode levar a sentimentos de solidão, especialmente quando as atividades sociais envolvem cores, como esportes ou arte. <br>
+                    🛡️​ Riscos à segurança: Pessoas com daltonismo podem ter dificuldade em distinguir sinais de trânsito e rótulos de alimentos, o que pode aumentar o risco de acidentes. <br>
+                </p>
+            </article>
+        </section>    
+   
+
+
+        <section class="tipos">
+            <h2>Simulador de Visão Daltônica (Natural)</h2>
+            <p>Compare abaixo como as cores são percebidas por pessoas com diferentes tipos de daltonismo.</p>
+            <div id="simulador" class="simulador"></div>
+        </section>
+
+
+<section class="educativo">
+  <h2>Entenda cada tipo de daltonismo</h2>
+  <p>Passe o mouse sobre os blocos abaixo para descobrir o que cada tipo afeta na visão.</p>
+
+
+  <div class="hover-tipos">
+    <div class="hover-card"
+      data-info="Protanopia: dificuldade em perceber tons de vermelho. Objetos vermelhos podem parecer marrons ou esverdeados, e tons de laranja e roxo ficam difíceis de distinguir."
+      data-colors="linear-gradient(90deg, #ff0000, #808000, #00ff00)">
+      <h3>Protanopia</h3>
+    </div>
+
+
+    <div class="hover-card"
+      data-info="Deuteranopia: dificuldade em distinguir tons de verde. O verde tende a se confundir com bege, cinza ou marrom, tornando o vermelho também menos vívido."
+      data-colors="linear-gradient(90deg, #00ff00, #ffff00, #ff6600)">
+      <h3>Deuteranopia</h3>
+    </div>
+
+
+    <div class="hover-card"
+      data-info="Tritanopia: dificuldade em perceber tons de azul. O azul e o amarelo se confundem, e tons de roxo podem parecer rosados."
+      data-colors="linear-gradient(90deg, #0000ff, #00ffff, #ffcc00)">
+      <h3>Tritanopia</h3>
+    </div>
+
+
+    <div class="hover-card"
+      data-info="Acromatopsia: ausência total de percepção de cores. A visão é composta apenas por tons de preto, branco e cinza — semelhante a uma fotografia antiga."
+      data-colors="linear-gradient(90deg, #000, #555, #fff)">
+      <h3>Acromatopsia</h3>
+    </div>
+  </div>
+
+
+  <div id="descricao-hover" class="descricao-hover">
+    Passe o mouse sobre um tipo para ver a explicação detalhada.
+  </div>
+
+
+  <div id="barra-cores" class="barra-cores"></div>
+</section>
+
+
+<script src="simulador.js"></script>  
+   
+    </main>
+   
+<footer>
+    <div class="footer-container">
+        <div class="left">
+            <img class="titulo" src="imagens/titulo.png" alt="Titulo">
+        </div>
+        <div class="right">
+            <h3>Projeto Multidisciplinar em Desenvolvimento de Sistemas</h3>
+            <p>Desenvolvido por Gean Lucas</p>
+            <a class="formulario" href="form.html">Preencha nosso formulário</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
