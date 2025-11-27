@@ -548,3 +548,160 @@
   
   .tab-content h3 { color: #0a454c; margin-top: 0; text-align: center; }
   .tab-content p { line-height: 1.7; max-width: 600px; margin: 0 auto; }
+
+/* ===================== */
+/*  curiosidades pagina */
+/* ===================== */
+
+.timeline-container {
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Linha fininha atrás dos cards */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  height: 4px;
+  background: #000000;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  background: white;
+  padding: 18px 20px;
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 14px rgba(0,0,0,0.12);
+  z-index: 2;
+  border: 3px solid #000000;
+}
+
+/* Bolinha */
+.timeline-item::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #ff8a80;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-item h3 {
+  color: #0097B2;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.timeline-item p {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item::before {
+    left: 50%;
+    top: -12px;
+    transform: translateX(-50%);
+  }
+}
+
+/* tabela */
+
+  .tabela-daltonismo {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 15px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #dfe9ff;
+  }
+
+  .tabela-daltonismo thead tr {
+    background: #3f3f3f;
+    color: white;
+  }
+
+  .tabela-daltonismo th,
+  .tabela-daltonismo td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .tabela-daltonismo tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .tabela-daltonismo tbody tr:nth-child(:autofill) {
+    background: #ffffff;
+  }
+
+  .tabela-daltonismo tbody tr:hover {
+    background: #ffffff;
+  }
+
+/* Container do carousel */
+#carouselProfissoes {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Tamanho das setas */
+.carousel-control-next {
+  width: 60px;
+}
+
+/* Remover seta de voltar */
+.carousel-control-prev {
+  display: none !important;
+}
+
+/* Estilizar seta de avançar */
+.carousel-control-next-icon {
+  background-image: none;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(-45deg);
+}
+
+/* Texto dos slides */
+.carousel-item {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
