@@ -710,3 +710,10 @@
 .titulo_cu {
   text-align: center;
 }
+
+.contact-form {
+  border: 2px solid #010101;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ff8a80;
+}
