@@ -705,3 +705,8 @@
   border-radius: 12px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+
+
+.titulo_cu {
+  text-align: center;
+}
